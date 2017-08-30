@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<img style="margin-left: 498px;margin-top: -14px;width: 413px;" src="http://www.adweek.com/wp-content/uploads/files/blogs/instagram-redo.png" width="15%" height="15%"><br>
+<center>
+<font color="silver">
+<form method="post">
+    {% csrf_token %}
+
+
+      <div>
+          <label for="username">Username: </label>
+          <input style="padding:10px 20px;" id="username" type="text" name="username" value={{ username }}>
+      </div>
+
+      <div>
+          <label for="password">Password: </label>
+          <input style="padding:10px 20px;" id="password" type="password" name="password" value={{ password }}>
+
+    <br>
+
+      <input style="margin-left: -30px;height: 30px;width: 7%;border-radius: 30px;margin-top: 10px;" type="submit" value="Log In">
+      </div>
+
+    </form>
+</font>
+</center>
+</body>
+</html>
+

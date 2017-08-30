@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>instagram</title>
+</head>
+<div style="height:100%;">
+<center>
+    <font size="+2">
+       <h3> <u>
+           <i> Welcome To InstaClone</i>
+       </u>       </h3>
+    </font>
+</center>
+
+<body>
+<form method="post">
+    {% csrf_token %}
+<img style="margin-left: -36px;margin-top: -90px;width: 383px;" src="http://www.adweek.com/wp-content/uploads/files/blogs/instagram-redo.png" width="15%" height="15%"><br>
+
+    <font size="+2">
+     <b>Create An Account</b><br>
+
+        <br/>
+        <br/>
+<b>NAME</b>: &nbsp; &nbsp; &nbsp;  <input style="margin-left:86px; height:30px; width:20%;" name="name" type="text"placeholder="NAME" value="{{name}}"><br><br>
+<b>USERNAME</b>: <input style="margin-left:55px; height:30px; width:20%;" type="text" name="username" placeholder="USERNAME" value="{{username}}"><br><br>
+<b>EMAIL</b>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="margin-left:75px; height:30px; width:20%;" type="email" name="email" placeholder="@EMAIL" value="{{email}}"><br><br>
+        <b>PASSWORD</b>: <input style="margin-left:55px; height:30px; width:20%;" type="password" name="password" placeholder="PASSWORD" value="{{password}}"><br>
+
+        <input style="margin-left: 223px;height: 30px;width: 7%;border-radius: 30px;margin-top: 10px;" type="submit" value="SIGN UP">
+        <div><h3>Already a user?<a href="login/">Login</a> </h3></div>
+</font>
+</form>
+
+</body>
+</div>
+</html>
